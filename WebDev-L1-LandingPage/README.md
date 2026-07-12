@@ -27,7 +27,7 @@ style.css   Layout, typography, palette, and responsive styles
 Update these placeholders in `index.html`:
 
 - `Divyansh Gupta` — name and `Divyansh` — page title
-- `divyan7499@gmail.com` — contact email
+- `divyansh123@gmail.com` — contact email
 - Footer social-link `href` values
 - Hero and section copy to match your work or brand
 
