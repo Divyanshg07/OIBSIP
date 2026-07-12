@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple temperature converter for Celsius, Fahrenheit, and Kelvin.">
+    <title>Temperature Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="converter" aria-labelledby="page-title">
+        <div class="heading">
+          <h1 id="page-title">Temperature<br><em>converter<br><br>let's convert~ </em></h1>
+          <p>Enter a temperature and get a precise reading in every scale.</p>
+        </div>
+
+        <form id="converter-form" novalidate>
+          <div class="input-group">
+            <label for="temperature">Temperature value</label>
+            <div class="field-wrap">
+              <input id="temperature" name="temperature" type="text" inputmode="decimal" autocomplete="off" placeholder="e.g. 24.5" aria-describedby="input-help validation-message" required>
+              <span id="input-unit" aria-hidden="true">°C</span>
+            </div>
+            <p id="input-help" class="helper">Decimals and negative values are welcome.</p>
+            <p id="validation-message" class="message" role="alert" aria-live="polite"></p>
+          </div>
+
+          <fieldset>
+            <legend>Input unit</legend>
+            <div class="unit-options">
+              <label class="unit-option"><input type="radio" name="unit" value="celsius" checked><span>°C <small>Celsius</small></span></label>
+              <label class="unit-option"><input type="radio" name="unit" value="fahrenheit"><span>°F <small>Fahrenheit</small></span></label>
+              <label class="unit-option"><input type="radio" name="unit" value="kelvin"><span>K <small>Kelvin</small></span></label>
+            </div>
+          </fieldset>
+
+          <button type="submit">Convert temperature <span aria-hidden="true">→</span></button>
+        </form>
+
+        <section class="results" aria-labelledby="results-title" aria-live="polite">
+          <div class="results-header">
+            <p class="eyebrow"><span></span> Converted values</p>
+            <h2 id="results-title">Ready when you are</h2>
+          </div>
+          <div class="result-grid">
+            <article class="result-card celsius"><p>Celsius</p><output id="celsius-result">—</output><span>°C</span></article>
+            <article class="result-card fahrenheit"><p>Fahrenheit</p><output id="fahrenheit-result">—</output><span>°F</span></article>
+            <article class="result-card kelvin"><p>Kelvin</p><output id="kelvin-result">—</output><span>K</span></article>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
