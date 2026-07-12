@@ -29,7 +29,7 @@ README.md    Project documentation
 
 Update these values in `index.html` before publishing:
 
-- Contact email: `divyansh.gupta@example.com`
+- Contact email: `divyansh123@gmail.com`
 - GitHub and LinkedIn placeholder URLs
 - Project titles, descriptions, and repository links
 - Avatar placeholder with a professional photo, if desired
