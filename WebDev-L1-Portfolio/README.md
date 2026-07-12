@@ -16,13 +16,6 @@ A responsive, single-page personal portfolio for Divyansh Gupta, a frontend deve
 
 Open `index.html` in a modern web browser.
 
-To preview it with a local server:
-
-```powershell
-python -m http.server 4173
-```
-
-Then visit `http://localhost:4173`.
 
 ## Project structure
 
