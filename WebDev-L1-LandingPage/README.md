@@ -1,4 +1,4 @@
-# Divya Landing Page
+# Divyansh Landing Page
 
 A responsive, static personal-brand landing page built with HTML5 and CSS3.
 
