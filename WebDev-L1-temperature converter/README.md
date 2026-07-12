@@ -33,10 +33,7 @@ The app converts the selected input to Celsius first, then derives the Fahrenhei
 ## Run locally
 
  Open `index.html` directly in a modern browser, or start a local server:
-
-   ```powershell
-   python -m http.server 4173
-   ```
+ 
 
 ## Project structure
 
