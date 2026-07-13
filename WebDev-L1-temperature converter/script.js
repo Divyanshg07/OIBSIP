@@ -38,7 +38,12 @@ function toCelsius(value, unit) {
   if (unit === 'kelvin') return value - 273.15;
   return value;
 }
-
+ function scrollToBottom() {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+   }
 function displayNumber(value) {
   const rounded = Math.round((value + Number.EPSILON) * 100) / 100;
   return new Intl.NumberFormat('en-US', { maximumFractionDigits: 2 }).format(rounded);
